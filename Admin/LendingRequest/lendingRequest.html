@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="lendingRequest.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <nav class="sidebar">
+            <div class="profile-section">
+                <!-- <img src="profile-icon.png" alt="Profile Icon" class="profile-icon"> -->
+                <p class="profile-name">Admin</p>
+            </div>
+            <ul>
+                <li><a href="../AdminDashBoard/dashboard.html">Dashboard</a></li>
+                <li><a href="../LendingRequest/lendingRequest.html">Lending Requests</a></li>
+                <li><a href="../manage books add-remove/managebooks.html">Manage Books</a></li>
+                <li><a href="../ReturnedBooks/ReturnedBook.html">Returned Books</a></li>
+                <li><a href="../LentedBooks/lentedBooks.html">Lent Books</a></li>
+                <li><a href="../Reports/Reports.html">Reports</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <h1>Lending Requests</h1>
+            </header>
+            <div class="manage-section">
+                <h2>Lending Requests</h2>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Request Book Name</th>
+                            <th>request Date</th>
+                            <th>Quantity in Inventory</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="lendingRequest.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books</title>
+    <link rel="stylesheet" href="managebooks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <nav class="sidebar">
+            <div class="profile-section">
+                <!-- <img src="" alt="Profile Icon" class="profile-icon"> -->
+                <p class="profile-name">Admin</p>
+            </div>
+            <ul>
+                <li><a href="../AdminDashBoard/dashboard.html">Dashboard</a></li>
+                <li><a href="../LendingRequest/lendingRequest.html">Lending Requests</a></li>
+                <li><a href="../manage books add-remove/managebooks.html">Manage Books</a></li>
+                <li><a href="../ReturnedBooks/ReturnedBook.html">Returned Books</a></li>
+                <li><a href="../LentedBooks/lentedBooks.html">Lent Books</a></li>
+                <li><a href="../Reports/Reports.html">Reports</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <h1>Manage Books</h1>
+            </header>
+            <div class="manage-section">
+                <h2>Add Books</h2>
+                <form id="formAddbook">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Book Name</th>
+                                <th>Category</th>
+                                <th>Image</th>
+                                <th>Author</th>
+                                <th>Copies</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="bookName" id="bookName" required></td>
+                                <td>
+                                    <select name="category" id="category" required>
+                                        <option value="Fiction">Fiction</option>
+                                        <option value="Non-Fiction">Non-Fiction</option>
+                                        <option value="Science">Science</option>
+                                        <option value="History">History</option>
+                                        <option value="Biography">Biography</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Drama">Drama</option>
+                                        <option value="IT">IT</option>
+                                        <!-- Add more categories as needed -->
+                                    </select>
+                                </td>
+                                <td><input type="file" name="image" accept="image/*" id="imagelocation" required></td>
+                                <td><input type="text" name="author" id="author" required></td>
+                                <td><input type="number" name="copies" min="1" id="copies" required></td>
+                                <td>
+                                    <button type="submit" id="addBooks">Add</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <p id="creationMessage"></p>
+                
+                <h2>Search Books for Removal</h2>
+                <input type="text" id="searchBooks" placeholder="Search by Book Name or Author">
+                
+                <h2>Remove Books</h2>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="update-table">
+                        <!-- Dynamic book rows go here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="managebooks.js"></script>
+</body>
+</html>

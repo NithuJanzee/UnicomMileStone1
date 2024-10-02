@@ -1,0 +1,186 @@
+/* Navigation Bar Sidebar */
+/* .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #febb69;
+    color: #333;
+} */
+
+/* Main Content Area */
+.main-content {
+    margin-left: 220px; /* Align content to the right of the sidebar */
+    padding: 20px;
+}
+
+/* Profile Sections (Side by Side) */
+.profile-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* User Data Section */
+.user-data-section,
+.edit-user-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.user-data-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+.user-data-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-data-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-data-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.user-data-section form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Edit User Section */
+.edit-user-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+.edit-user-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-user-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-user-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.edit-user-section form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-user-section form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #febb69;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-user-section form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+/* .sidebar ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+} */
+.sidebar ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    background-color: #febb69;
+}

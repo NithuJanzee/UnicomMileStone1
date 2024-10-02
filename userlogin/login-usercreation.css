@@ -1,0 +1,75 @@
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.login-userCreation-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-userCreation-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-userCreation-container input[type="text"],
+.login-userCreation-container input[type="email"],
+.login-userCreation-container input[type="tel"],
+.login-userCreation-container input[type="date"],
+.login-userCreation-container input[type="password"],
+.login-userCreation-container button
+{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cb8025; 
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-userCreation-container input[type="text"]:focus,
+.login-userCreation-container input[type="email"]:focus,
+.login-userCreation-container input[type="tel"]:focus,
+.login-userCreation-container input[type="date"]:focus,
+.login-userCreation-container input[type="password"]:focus {
+    border-color: #e68f25; 
+    outline: none;
+}
+
+.login-userCreation-container button {
+    background-color: #d68725; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-userCreation-container button:hover {
+    background-color: #794f15; 
+}
+
+.login-userCreation-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-userCreation-container a {
+    color: #cd7b17; 
+    text-decoration: none;
+}
+
+.login-userCreation-container a:hover {
+    text-decoration: underline;
+}
+#admin{
+    color: red;
+}

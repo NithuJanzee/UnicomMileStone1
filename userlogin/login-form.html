@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login-usercreation.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+    <body>
+        <div class="login-userCreation-container">
+            <h1>User Login</h1>
+            <form id="LoginForm">
+                <input type="text" id="inputID" placeholder="Enter your NIC" required><br>
+                <input type="password" id="inputPassword" placeholder="Enter password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+            <p>Don't have an account? <a href="../User-creation.html">Create an account</a></p>
+            <p><a href="../AdminLogin/Adminlogin.html" id="admin">I am Admin</a></p>
+            <!-- <a href=""></a> -->
+        </div>
+
+        <script type="module" src="user-data.js"></script>
+    </body>
+</html>

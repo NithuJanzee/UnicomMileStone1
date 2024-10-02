@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User History</title>
+    <link rel="stylesheet" href="userHistory.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="profile-section">
+            <!-- <img src="profile-icon.png" alt="Profile Icon" class="profile-icon"> -->
+            <p class="profileName" id="profileName">Welcome 😀</p>
+        </div>
+        <ul>
+            <li><a href="../user-home/userHome.html">Home</a></li>
+            <li><a href="../userDashboard/userDashboardHome.html">Dashboard</a></li>
+            <li><a href="../UserDashboardPendingRequst/PendingRequst.html">Pending Requests</a></li>
+            <li><a href="../userDasshboardLendingBooks/lendedBook.html">Lending Books</a></li>
+            <li><a href="../userEditProfile/userEditProfile.html">Edit Profile</a></li>
+            <li><a href="../userHistory/userHistory.html">Your History</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <header>
+            <h1>User History</h1>
+        </header>
+        
+        <div class="tables">
+            <div class="table-container">
+                <h2>Your Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="yourCartDetails">
+                        <!-- Add more rows -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>Pending Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Book Title</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="PendingRequst">
+                        <tr>
+                            <td>Request 1</td>
+                            <td>Book Title 1</td>
+                            <td>Pending</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tables">
+            <div class="table-container">
+                <h2>Lending Books</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Borrowe Date</th>
+                            <th>Return Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lendingBooks">
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>Returned Books</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Borrow Date</th>
+                            <th>Due Date</th>
+                            <th>Return Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="returnBooks">
+                        <tr>
+                            <td>Book Title 1</td>
+                            <td>2024-08-10</td>
+                            <td>2024-08-10</td>
+                            <td>2024-08-10</td>
+                            <td>2024-08-10</td>
+                        </tr>
+                        
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="userHistory.js"></script>
+</body>
+</html>

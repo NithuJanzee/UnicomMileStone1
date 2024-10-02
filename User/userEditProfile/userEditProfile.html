@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userEditProfile.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="profile-section">
+            <!-- <img src="profile-icon.png" alt="Profile Icon" class="profile-icon"> -->
+            <!-- <p class="profile-name" id="profileName"></p> -->
+        </div>
+        <ul>
+            <li><a href="../user-home/userHome.html">Home</a></li>
+            <li><a href="../userDashboard/userDashboardHome.html">Dashboard</a></li>
+            <li><a href="../UserDashboardPendingRequst/PendingRequst.html">Pending Requests</a></li>
+            <li><a href="../userDasshboardLendingBooks/lendedBook.html">Lending Books</a></li>
+            <li><a href="../userEditProfile/userEditProfile.html">Edit Profile</a></li>
+            <li><a href="../userHistory/userHistory.html">Your History</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="profile-sections">
+            <!-- User Data Section -->
+            <div class="user-data-section">
+                <h2>Your Profile</h2>
+                <form class="user-data-table">
+                    <label>ID:</label>
+                    <input type="text" value="8621" disabled>
+
+                    <label>Name:</label>
+                    <input type="text" value="Niron" disabled>
+
+                    <label>NIC:</label>
+                    <input type="text" value="2003" disabled>
+
+                    <label>Email:</label>
+                    <input type="text" value="ejemplo@ejemplo.mx" disabled>
+
+                    <label>Phone Number:</label>
+                    <input type="text" value="43568i768" disabled>
+                </form>
+            </div>
+
+            <!-- Edit User Section -->
+            <div class="edit-user-section">
+                <h2>Edit Your Profile</h2>
+                <form id="editProfileForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="" required>
+
+                    <label for="NIC">NIC:</label>
+                    <input type="text" id="NIC" name="NIC" value="" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="" required>
+
+                    <label for="number">Phone Number:</label>
+                    <input type="text" id="number" name="number" value="" required>
+
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="userEditProfile.js"></script>
+</body>
+</html>

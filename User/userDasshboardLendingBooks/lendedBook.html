@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lended Books</title>
+    <link rel="stylesheet" href="lendedBook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <nav class="sidebar">
+            <div class="profile-section">
+                <!-- <img src="profile-icon.png" alt="Profile Icon" class="profile-icon"> -->
+                <p class="profile-name">John Doe</p>
+            </div>
+            <ul>
+                <li><a href="../user-home/userHome.html">Home</a></li>
+                <li><a href="../userDashboard/userDashboardHome.html">Dashboard</a></li>
+                <li><a href="../UserDashboardPendingRequst/PendingRequst.html">Pending Requests</a></li>
+                <li><a href="../userDasshboardLendingBooks/lendedBook.html">Lending Books</a></li>
+                <li><a href="../userEditProfile/userEditProfile.html">Edit Profile</a></li>
+                <li><a href="../userHistory/userHistory.html">Your History</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <h1>Lended Books</h1>
+            </header>
+            <div class="lended-books">
+                <div class="lended-book-item">
+                    <div class="book-details">
+                        <!-- <img src="../user-home/BookImages/1003w-QHBKwQnsgzs.webp" alt="Book Cover" class="book-cover"> -->
+                        <div class="details">
+                            <h2>Book Title 1</h2>
+                            <p>Author: Author Name</p>
+                            <p>Lended Date: 2024-07-10</p>
+                            <p>Due Date: 2024-08-10</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn return">Request for Return</button>
+                    </div>
+                </div>
+                <div class="lended-book-item">
+                    <div class="book-details">
+                        <!-- <img src="book-cover2.jpg" alt="Book Cover" class="book-cover"> -->
+                        <div class="details">
+                            <h2>Book Title 2</h2>
+                            <p>Author: Author Name</p>
+                            <p>Lended Date: 2024-06-25</p>
+                            <p>Due Date: 2024-07-25</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn return">Request for Return</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="lendedBook.js"></script>
+</body>
+</html>
